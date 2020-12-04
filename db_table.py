@@ -22,3 +22,7 @@ CREATE TABLE links (
 INSERT INTO links (url, name)
 VALUES('http://www.postgresql.org','PostgreSQL') 
 RETURNING id;
+
+
+ALTER TABLE table_name 
+DROP COLUMN column_name;
