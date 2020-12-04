@@ -17,3 +17,8 @@ CREATE TABLE links (
 	description VARCHAR (255),
         last_update DATE
 )
+
+
+INSERT INTO links (url, name)
+VALUES('http://www.postgresql.org','PostgreSQL') 
+RETURNING id;
